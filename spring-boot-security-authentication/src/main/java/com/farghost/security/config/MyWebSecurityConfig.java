@@ -12,9 +12,9 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        //关闭csrg跨域检查
+        // 关闭csrg跨域检查
         http.csrf().disable()
-                //配置资源权限
+                // 配置授权
                 .authorizeRequests()
                 .antMatchers("/pm/**").hasRole("manager")
                 .antMatchers("/traffic/**").hasRole("operator")
