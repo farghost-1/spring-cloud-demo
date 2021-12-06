@@ -1,4 +1,4 @@
-SpringBoot快速集成Spring-Cloud-Security
+SpringBoot快速集成SpringSecurity
 
 ## 添加依赖
 
