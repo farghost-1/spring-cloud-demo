@@ -25,6 +25,7 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //并行条件
                 .and()
                 //登陆成功跳转到/success, 失败跳转到/failure
-                .formLogin().defaultSuccessUrl("/success").failureUrl("/failure");
+//                .formLogin().defaultSuccessUrl("/success").failureUrl("/failure");
+                .formLogin().defaultSuccessUrl("/user/getLoginUserByPrincipal").failureUrl("/failure");
     }
 }
