@@ -6,7 +6,8 @@
     <artifactId>spring-cloud-demo</artifactId>
     <version>1.0.0</version>
     <modules>
-        <module>spring-cloud-security-start</module>
+        <module>spring-boot-security-start</module>
+        <module>spring-boot-security-authentication</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-cloud-demo</name>

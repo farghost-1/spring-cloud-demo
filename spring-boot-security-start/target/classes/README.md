@@ -1,3 +1,5 @@
+SpringBoot快速集成Spring-Cloud-Security
+
 ## 添加依赖
 
 ```XML
@@ -93,11 +95,11 @@ public class WebSecurityConfiguration implements ImportAware, BeanClassLoaderAwa
 
 ```Java
 protected void configure(HttpSecurity http)throws Exception{
-        this.logger.debug("Using default configure(HttpSecurity). "
-        +"If subclassed this will potentially override subclass configure(HttpSecurity).");
-        http.authorizeRequests((requests)->requests.anyRequest().authenticated());
-        http.formLogin();
-        http.httpBasic();
-        }
+    this.logger.debug("Using default configure(HttpSecurity). "
+    +"If subclassed this will potentially override subclass configure(HttpSecurity).");
+    http.authorizeRequests((requests)->requests.anyRequest().authenticated());
+    http.formLogin();
+    http.httpBasic();
+}
 ```
 
